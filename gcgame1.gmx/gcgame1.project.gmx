@@ -8,6 +8,8 @@
   <sprites name="sprites">
     <sprite>sprites\s_start_button</sprite>
     <sprite>sprites\s_start_information</sprite>
+    <sprite>sprites\s_player</sprite>
+    <sprite>sprites\s_move_target</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\b_game_map</background>
@@ -17,6 +19,8 @@
     <object>objects\o_button_parent</object>
     <object>objects\o_start_button</object>
     <object>objects\o_start_information</object>
+    <object>objects\o_player</object>
+    <object>objects\o_move_target</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\r_start_menu</room>
