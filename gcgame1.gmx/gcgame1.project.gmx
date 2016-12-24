@@ -10,9 +10,12 @@
     <sprite>sprites\s_start_information</sprite>
     <sprite>sprites\s_player</sprite>
     <sprite>sprites\s_move_target</sprite>
+    <sprite>sprites\s_geocache_unfound</sprite>
+    <sprite>sprites\s_back_button</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\b_game_map</background>
+    <background>background\b_cache_1</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
@@ -21,10 +24,14 @@
     <object>objects\o_start_information</object>
     <object>objects\o_player</object>
     <object>objects\o_move_target</object>
+    <object>objects\o_cache_parent</object>
+    <object>objects\o_cache_1</object>
+    <object>objects\o_return_button</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\r_start_menu</room>
     <room>rooms\r_map</room>
+    <room>rooms\r_cache_1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
