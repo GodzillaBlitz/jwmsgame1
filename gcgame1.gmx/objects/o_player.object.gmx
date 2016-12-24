@@ -51,16 +51,41 @@ image_index = 0;
           <argument>
             <kind>1</kind>
             <string>/// Move Character with Mouse Click
+
 if(instance_exists(o_move_target)){
     mouseDistance = point_distance(x, y, o_move_target.x, o_move_target.y);
     move_towards_point(o_move_target.x, o_move_target.y, min(1, mouseDistance));
-
-    if(x &lt;= o_move_target.x){
-        image_index = 0
+        
+    var xdiff;
+    var ydiff;
+    
+    xdiff = o_move_target.x - x;
+    ydiff = o_move_target.y - y;
+    
+    // if we're there, delete the target. otherwise, move.
+    if ((xdiff == 0) &amp;&amp; (ydiff == 0)) {
+        with(o_move_target) instance_destroy();
+        image_index = 0;
     }
-    else if(x &gt; o_move_target.x){
-        image_index = 1
-    }   
+    else {
+        // select sprite image based on largest direction of travel
+        if (abs(xdiff) &gt; abs(ydiff)) {
+            if(xdiff &lt;= 0){
+                image_index = 1;
+            }
+            else {
+                image_index = 0;
+            }
+        } 
+        else {
+            if(ydiff &lt;= 0){
+                image_index = 3;
+            }
+            else {
+                image_index = 2;
+            }
+        }
+    }
 }
 else{
     image_index =0;
