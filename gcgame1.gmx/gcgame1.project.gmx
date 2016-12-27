@@ -27,9 +27,9 @@
     <object>objects\o_move_target</object>
     <object>objects\o_cache_parent</object>
     <object>objects\o_cache_1</object>
-    <object>objects\o_return_button</object>
     <object>objects\o_rock1</object>
     <object>objects\o_cache_cover_parent</object>
+    <object>objects\o_back_button</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\r_start_menu</room>
